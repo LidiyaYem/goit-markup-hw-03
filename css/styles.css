@@ -50,6 +50,10 @@ ul {
 /* Logo */
 
 .logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
     color: black;
     font-family: Raleway, sans-serif;
     font-size: 26px;
@@ -65,9 +69,34 @@ ul {
     list-style: none;
 }
 
+/* Main nav */
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav {
+    display: flex;
+}
+
 /* Site nav */
 
+.site-nav {
+    display:flex;
+    margin-left: 93px;
+    padding-left: 0;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .site-nav .link-current{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--accent-color);
     letter-spacing: 0.02em;
     font-weight: 500;
@@ -77,6 +106,10 @@ ul {
 }
 
 .site-nav .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: #212121;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -92,7 +125,23 @@ ul {
     color: var(--accent-color);
 }
 
+/* Site auth */
+
+.site-auth {
+    display:flex;
+    margin-left: auto;
+    padding-left: 0;
+}
+
+.site-auth .item:not(:first-child) {
+    margin-left: 50px;
+}
+
 .site-auth .link-contact {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     text-decoration: none;  
     font-weight: 500;
     font-size: 14px;
@@ -269,6 +318,42 @@ ul {
     padding-bottom: 94px;
 }
 
+/* Особливості */
+
+.feature-list {
+    display: flex;
+    padding-left: 0;
+}
+
+.feature-list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* Чим ми займаємось */
+
+.work-types-list {
+    display: flex;
+    padding-left: 0;
+}
+
+.work-types-list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* Наша команда */
+
+.team-list {
+    display: flex;
+    padding-left: 0;
+}
+
+.team-list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-list .item {
+    padding-bottom: 30px;
+}
 
 /* Portfolio */
 
@@ -287,7 +372,25 @@ ul {
     line-height: 1.88;
 }
 
+.work-list-nav {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
 
+.work-list-nav .item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.work-lists {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.work-lists .item:nth-child(3n) {
+    margin-right: 30px;
+}
 /* Footer */
 
 .address .street {
@@ -304,4 +407,9 @@ ul {
 .address .link-contact:hover,
 .address .link-contact:focus {
     color: var(--accent-color);
+}
+
+.section.footer .logo {
+    padding-top: 0;
+    padding-bottom: 0;
 }
