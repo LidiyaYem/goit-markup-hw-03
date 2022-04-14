@@ -173,6 +173,7 @@ ul {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-color: #E5E5E5;
 }
 
 .hero-title {
@@ -427,6 +428,10 @@ ul {
 }
 
 /* Footer */
+
+.section.footer {
+    background-color: #E5E5E5;
+}
 
 .address .street {
     color: var(--hero-text-color);
