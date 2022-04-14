@@ -64,6 +64,10 @@ ul {
     color: var(--accent-color);
 }
 
+.logo .studio {
+    color: var(--hero-text-color);
+}
+
 ul {
     list-style: none;
 }
@@ -373,7 +377,6 @@ ul {
 
 .work-lists .item-description {
     padding: 20px 24px;
-    margin-bottom: 30px;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
@@ -398,7 +401,7 @@ ul {
     display: flex;
     justify-content: center;
     padding-left: 0;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 .work-list-nav .item:not(:last-child) {
@@ -412,7 +415,8 @@ ul {
 }
 
 .work-lists .item {
-    width: calc ((100% - 60px) / 3);
+    margin-bottom: 30px;
+    width: calc((100% - 60px) / 3);
 }
 
 .work-lists .item:nth-last-child(-n + 3) {
